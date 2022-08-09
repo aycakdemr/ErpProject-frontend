@@ -9,6 +9,7 @@ import Col from "react-bootstrap/Col";
 import { Route, Routes } from "react-router";
 import BranchList from "../pages/BranchList";
 import SectionDetail from "../pages/SectionDetail";
+import MessageDashboard from "./MessageDashboard";
 
 export default function Dashboard() {
   return (
@@ -31,6 +32,8 @@ export default function Dashboard() {
             </Routes>
           </Col>
         </Row>
+        <Routes>
+        <Route path="messages" element={<MessageDashboard />} /></Routes>
       </Container>
     </div>
   );
