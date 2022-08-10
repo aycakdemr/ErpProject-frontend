@@ -13,10 +13,7 @@ export default function MessageDashboard() {
   return (
     <div>
       <Container>
-        <Navi></Navi>
-        <br></br>
-        <br></br>
-        <br></br>
+        
         <Row>
           <Col sm={3}>
             <MessageLayout></MessageLayout>

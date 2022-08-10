@@ -15,10 +15,7 @@ export default function Dashboard() {
   return (
     <div>
       <Container>
-        <Navi></Navi>
-        <br></br>
-        <br></br>
-        <br></br>
+        
         <Row>
           <Col sm={3}>
             <Menu></Menu>

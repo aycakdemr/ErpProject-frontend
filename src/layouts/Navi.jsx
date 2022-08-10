@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import SignedIn from "./SignedIn";
 import SignedOut from "./SignedOut";
+import NotificationList from "../pages/NotificationList";
 
 export default function Navi() {
   const [isAuthenticated, setIsAuthenticated] = useState(true);
@@ -21,7 +22,9 @@ export default function Navi() {
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            
+
+            <NotificationList></NotificationList>
             <div >
               <Nav.Item style={{marginLeft:'40rem'}}>
                 {isAuthenticated ? (
