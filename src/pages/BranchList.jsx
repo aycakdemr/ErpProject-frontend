@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import ListGroup from "react-bootstrap/ListGroup";
 import BranchService from "../services/branchService";
 import Table from "react-bootstrap/Table";
+import { NavLink } from "react-router-dom";
+import Button from "react-bootstrap/Button";
 
 export default function BranchList() {
     const [branches, setBranches] = useState([]);
@@ -23,6 +24,12 @@ export default function BranchList() {
         </tr>
       ))}
     </tbody>
-  </Table></div>
+  </Table>
+  <div className="d-flex justify-content-end">
+          <Button as={NavLink}
+                  to="/addbranch" variant="success">
+            Branch Ekle   
+          </Button>
+        </div></div>
   )
 }

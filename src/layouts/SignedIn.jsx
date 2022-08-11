@@ -14,6 +14,7 @@ export default function SignedIn(props) {
         <Dropdown.Item as={NavLink}
                   to="/messages">Mesajlar</Dropdown.Item>
         <Dropdown.Item as={NavLink} to="/todolist">Yapılacaklar</Dropdown.Item>
+        <Dropdown.Item as={NavLink} to="/contact">İletişim</Dropdown.Item>
         <Dropdown.Item href="#/action-3" onClick={props.signOut}>Çıkış Yap</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>

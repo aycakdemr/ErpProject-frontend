@@ -10,6 +10,8 @@ import { Route, Routes } from "react-router";
 import BranchList from "../pages/BranchList";
 import SectionDetail from "../pages/SectionDetail";
 import MessageDashboard from "./MessageDashboard";
+import AddBranch from "../pages/AddBranch";
+import AddTable from "../pages/AddTable";
 
 export default function Dashboard() {
   return (
@@ -25,6 +27,8 @@ export default function Dashboard() {
               <Route path="sections" element={<SectionList />} />
               <Route path="tables" element={<TableList />} />
               <Route path="branches" element={<BranchList />} />
+              <Route path="addbranch" element={<AddBranch />} />
+              <Route path="addtable" element={<AddTable />} />
               <Route path="sections/:id" element={<SectionDetail />} />
             </Routes>
           </Col>

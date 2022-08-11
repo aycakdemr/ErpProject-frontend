@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import TableService from "../services/tableService";
 import Table from "react-bootstrap/Table";
 
+import { NavLink } from "react-router-dom";
+import Button from "react-bootstrap/Button";
 export default function TableList() {
   const [tables, setTables] = useState([]);
   useEffect(() => {
@@ -33,6 +35,12 @@ export default function TableList() {
           ))}
         </tbody>
       </Table>
+      <div className="d-flex justify-content-end">
+          <Button as={NavLink}
+                  to="/addtable" variant="success">
+            Table Ekle   
+          </Button>
+        </div>
     </div>
   );
 }
