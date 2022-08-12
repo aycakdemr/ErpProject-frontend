@@ -12,6 +12,7 @@ import SectionDetail from "../pages/SectionDetail";
 import MessageDashboard from "./MessageDashboard";
 import AddBranch from "../pages/AddBranch";
 import AddTable from "../pages/AddTable";
+import Footer from "./Footer";
 
 export default function Dashboard() {
   return (
@@ -35,6 +36,7 @@ export default function Dashboard() {
         </Row>
         <Routes>
         <Route path="messages" element={<MessageDashboard />} /></Routes>
+        <Footer></Footer>
       </Container>
     </div>
   );

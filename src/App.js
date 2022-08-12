@@ -8,6 +8,8 @@ import Navi from "./layouts/Navi";
 import { ToastContainer } from "react-toastify";
 import FinishedToDoList from "./pages/FinishedToDoList";
 import Contact from "./pages/Contact";
+import Footer from "./layouts/Footer";
+import SignIn from "./pages/SignIn";
 
 function App() {
   return (
@@ -24,7 +26,9 @@ function App() {
         <Route exact path="todolist/*" element={<ToDoList />} />
         <Route exact path="finishedtodolist/*" element={<FinishedToDoList />} />
         <Route exact path="contact/*" element={<Contact />} />
+        <Route exact path="signin/*" element={<SignIn />} />
       </Routes>
+      
     </div>
   );
 }
